@@ -12,14 +12,17 @@
   <script type="text/babel">
     // Your JSX code here
 
+    // All the variables
     let myVar = "Seize the day";
     let boolVar = false;
 
-    let element1 = <p>Seize the day</p>
-    let element2 = <p>{myVar}</p>
-    let element3 = <p>{boolVar?"Seize the day":"Make the most of it"}</p>
+    // All the elements
+    let element1 = <p>Seize the day</p>  //Normal element creation
+    let element2 = <p>{myVar}</p> // Element creation with variable
+    let element3 = <p>{boolVar?"Seize the day":"Make the most of it"}</p> // Element creation with condition (using turnary operators)
 
 
+    // Storeing all the created element in a single variable
     let mainElement = (
         <>
         {element1}
@@ -29,6 +32,7 @@
     );
 
 
+    // Rendering the element
     const rootElement = ReactDOM.createRoot(document.getElementById("root"));
     rootElement.render(mainElement);
 
